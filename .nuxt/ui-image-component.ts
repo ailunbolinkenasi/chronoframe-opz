@@ -1,0 +1,1 @@
+export { default } from "/Users/xiaoyou/Desktop/chronoframe/node_modules/.pnpm/@nuxt+image@1.11.0_db0@0.3.4_better-sqlite3@12.5.0_drizzle-orm@0.44.7_@cloudflare+worke_5886db073ec5b512e225e21b22b6101b/node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue";
