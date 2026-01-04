@@ -26,7 +26,16 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'nuxt-gtag',
   ],
-
+  fonts: {
+    // ❌ 禁用所有远程字体源的自动下载
+    remote: false, 
+    
+    // 显式禁用特定的提供商（双重保险）
+    providers: {
+      google: false,
+      bunny: false,
+    },
+  },
   css: ['~/assets/css/tailwind.css'],
 
   components: [{ path: '~/components/ui', pathPrefix: false }, '~/components'],
@@ -205,15 +214,6 @@ export default defineNuxtConfig({
       scan: true,
     },
   },
-  fonts: {
-      // ❌ 禁用所有远程字体源的自动下载
-      remote: false, 
-      
-      // 显式禁用特定的提供商（双重保险）
-      providers: {
-        google: false,
-        bunny: false,
-      },
   ogImage: {
     fonts: ['Rubik:400', 'Rubik:700', 'Noto+Sans+SC:400', 'Noto+Sans+SC:700'],
   },
