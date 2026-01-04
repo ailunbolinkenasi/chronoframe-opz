@@ -145,7 +145,7 @@ export default defineNuxtConfig({
     preset: 'node_server',
     // 修改这里：使用 output.dir 而不是 outputDir
     output: {
-      dir: '.edgeone' 
+      dir: '.edgeone',
     },
     experimental: {
       websocket: true,
