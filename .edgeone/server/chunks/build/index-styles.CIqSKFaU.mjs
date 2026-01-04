@@ -1,0 +1,8 @@
+const index_vue_vue_type_style_index_0_lang = ".heatmap-container{min-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-color:rgba(0,0,0,.2) transparent;scrollbar-width:thin}.heatmap-container::-webkit-scrollbar{height:4px}.heatmap-container::-webkit-scrollbar-track{background:#0000000d;border-radius:2px}.heatmap-container::-webkit-scrollbar-thumb{background:#0003;border-radius:2px}.heatmap-container::-webkit-scrollbar-thumb:hover{background:#0000004d}.dark .heatmap-container::-webkit-scrollbar-track{background:#ffffff0d}.dark .heatmap-container::-webkit-scrollbar-thumb{background:#fff3}.dark .heatmap-container::-webkit-scrollbar-thumb:hover{background:#ffffff4d}.heatmap-container .vch__container{min-width:720px}.vch__day__label,.vch__legend,.vch__month__label{color:var(--color-neutral-500);font-size:var(--text-xs);font-weight:var(--font-weight-medium)}.vch__day__label,.vch__month__label{font-size:var(--text-xs)}";
+
+const indexStyles_CIqSKFaU = [
+  index_vue_vue_type_style_index_0_lang
+];
+
+export { indexStyles_CIqSKFaU as default };
+//# sourceMappingURL=index-styles.CIqSKFaU.mjs.map

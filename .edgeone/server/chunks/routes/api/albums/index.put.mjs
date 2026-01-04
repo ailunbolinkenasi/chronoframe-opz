@@ -1,0 +1,118 @@
+import { e as eventHandler, r as requireUserSession, g as getValidatedRouterParams, a as readValidatedBody, u as useDB, t as tables, c as createError } from '../../../nitro/nitro.mjs';
+import { z } from 'zod';
+import { eq } from 'drizzle-orm';
+import '@adonisjs/hash';
+import '@adonisjs/hash/drivers/scrypt';
+import 'lru-cache';
+import '@unocss/core';
+import '@unocss/preset-wind3';
+import 'devalue';
+import 'consola';
+import 'unhead';
+import 'node:http';
+import 'node:https';
+import 'node:crypto';
+import 'stream';
+import 'events';
+import 'http';
+import 'crypto';
+import 'buffer';
+import 'zlib';
+import 'https';
+import 'net';
+import 'tls';
+import 'url';
+import 'node:events';
+import 'node:buffer';
+import 'node:fs';
+import 'node:path';
+import 'vue';
+import '@intlify/h3';
+import '@intlify/utils/h3';
+import '@intlify/utils';
+import 'vue-router';
+import 'fs';
+import 'path';
+import 'drizzle-orm/better-sqlite3';
+import 'better-sqlite3';
+import 'drizzle-orm/sqlite-core';
+import '@aws-sdk/client-s3';
+import '@aws-sdk/s3-request-presigner';
+import '@vingle/bmp-js';
+import 'heic-convert';
+import 'sharp';
+import 'thumbhash';
+import 'node:fs/promises';
+import 'exiftool-vendored';
+import 'es-toolkit';
+import 'node:url';
+import 'unhead/server';
+import 'unhead/utils';
+import 'vue-bundle-renderer/runtime';
+import 'vue/server-renderer';
+import '@iconify/utils';
+import 'ipx';
+
+const index_put = eventHandler(async (event) => {
+  await requireUserSession(event);
+  const { albumId } = await getValidatedRouterParams(
+    event,
+    z.object({
+      albumId: z.string().regex(/^\d+$/).transform((val) => parseInt(val, 10))
+    }).parse
+  );
+  const body = await readValidatedBody(
+    event,
+    z.object({
+      title: z.string().min(1).max(255).optional(),
+      description: z.string().max(1e3).optional(),
+      coverPhotoId: z.string().optional(),
+      photoIds: z.array(z.string()).optional()
+    }).parse
+  );
+  const db = useDB();
+  const album = await db.select().from(tables.albums).where(eq(tables.albums.id, albumId)).get();
+  if (!album) {
+    throw createError({
+      statusCode: 404,
+      statusMessage: "Album not found"
+    });
+  }
+  const updatedAlbum = db.transaction((tx) => {
+    const updateData = {
+      updatedAt: /* @__PURE__ */ new Date()
+    };
+    if (body.title !== void 0) {
+      updateData.title = body.title;
+    }
+    if (body.description !== void 0) {
+      updateData.description = body.description || null;
+    }
+    if (body.coverPhotoId !== void 0) {
+      updateData.coverPhotoId = body.coverPhotoId || null;
+    }
+    tx.update(tables.albums).set(updateData).where(eq(tables.albums.id, albumId)).run();
+    if (body.photoIds !== void 0) {
+      tx.delete(tables.albumPhotos).where(eq(tables.albumPhotos.albumId, albumId)).run();
+      const photoIds = new Set(body.photoIds);
+      if (body.coverPhotoId) {
+        photoIds.add(body.coverPhotoId);
+      }
+      if (photoIds.size > 0) {
+        let pos = 1e6;
+        for (const photoId of photoIds) {
+          tx.insert(tables.albumPhotos).values({
+            albumId,
+            photoId,
+            position: pos += 10
+          }).onConflictDoNothing().run();
+        }
+      }
+    }
+    return tx.select().from(tables.albums).where(eq(tables.albums.id, albumId)).get();
+  });
+  return updatedAlbum;
+});
+
+export { index_put as default };
+//# sourceMappingURL=index.put.mjs.map
