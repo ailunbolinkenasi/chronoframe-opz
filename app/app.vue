@@ -75,6 +75,28 @@ provide(
     },
   }),
 )
+
+const toast = useToast()
+const route = useRoute()
+const config = useRuntimeConfig()
+
+onMounted(() => {
+  if (route.path === '/') {
+    toast.add({
+      title: '本版本更新说明',
+      description:
+        [
+          '1. 优化了队列上传的读取速度',
+          '2. 优化了首页图片部分展示照片为圆角状态',
+          '3. 优化了加载动画',
+          `4. 本次优化版本号为v${config.public.VERSION}`,
+        ].join('\n'),
+      color: 'info',
+      icon: 'tabler:info-circle',
+      duration: 10000,
+    })
+  }
+})
 </script>
 
 <template>

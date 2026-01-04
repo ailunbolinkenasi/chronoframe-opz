@@ -413,7 +413,7 @@ const onStorageDelete = async (storageId: number) => {
                     @click="close"
                   />
                   <UButton
-                    label="继续"
+                    label="登录"
                     variant="soft"
                     icon="tabler:arrows-exchange"
                     type="submit"

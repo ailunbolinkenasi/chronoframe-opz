@@ -26,16 +26,7 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'nuxt-gtag',
   ],
-  fonts: {
-    // ❌ 禁用所有远程字体源的自动下载
-    remote: false, 
-    
-    // 显式禁用特定的提供商（双重保险）
-    providers: {
-      google: false,
-      bunny: false,
-    },
-  },
+
   css: ['~/assets/css/tailwind.css'],
 
   components: [{ path: '~/components/ui', pathPrefix: false }, '~/components'],
@@ -143,10 +134,6 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'node_server',
-    // 修改这里：使用 output.dir 而不是 outputDir
-    output: {
-      dir: '.edgeone',
-    },
     experimental: {
       websocket: true,
       tasks: true,
@@ -214,9 +201,18 @@ export default defineNuxtConfig({
       scan: true,
     },
   },
+  fonts: {
+      // 禁用特定的提供商
+      providers: {
+        google: false, // 彻底禁用 Google Fonts 来源
+      },
+      // 或者如果你想本地化处理，可以设置只使用本地或特定来源
+      priority: ['local'], 
+    },
   ogImage: {
     fonts: ['Rubik:400', 'Rubik:700', 'Noto+Sans+SC:400', 'Noto+Sans+SC:700'],
   },
+
   dayjs: {
     locales: ['zh-cn', 'zh-hk', 'en'],
     plugins: [

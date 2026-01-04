@@ -340,4 +340,3 @@ Thanks to the following open-source projects and libraries:
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=HoshinoSuzumi/chronoframe&type=date&legend=top-left" />
  </picture>
 </a>
-# chronoframe-opz

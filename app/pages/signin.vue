@@ -41,10 +41,11 @@ const onAuthSubmit = async (event: any) => {
   <div
     class="relative w-full min-h-svh flex flex-col items-center justify-center p-4 pb-12 overflow-hidden bg-[#F8F6F6] text-[#132843]"
   >
+    <!-- 背景装饰 -->
     <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#D6DEEB] blur-[100px] opacity-60 pointer-events-none"></div>
-    
     <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-[#6191D3] blur-[120px] opacity-20 pointer-events-none"></div>
 
+    <!-- 卡片容器 -->
     <div class="relative w-full max-w-md bg-white/80 backdrop-blur-sm border border-[#D6DEEB] shadow-xl shadow-[#132843]/5 rounded-2xl p-6 md:p-8">
       
       <div class="mb-6 text-center">
@@ -58,11 +59,13 @@ const onAuthSubmit = async (event: any) => {
 
       <AuthForm
         class="
+          /* === 1. 登录按钮布局 === */
           [&_button[type=submit]]:mx-auto
           [&_button[type=submit]]:block
           [&_button[type=submit]]:w-fit
           [&_button[type=submit]]:min-w-[140px]
           
+          /* === 2. 登录按钮外观 (无填充) === */
           [&_button[type=submit]]:bg-transparent
           [&_button[type=submit]]:border-2
           [&_button[type=submit]]:border-[#3966A2]
@@ -78,11 +81,13 @@ const onAuthSubmit = async (event: any) => {
           /* 匹配 raw SVG (防止图标是纯 SVG 渲染的) */
           [&_button[type=submit]_svg]:!hidden
 
+          /* === 4. 登录按钮悬停效果 === */
           [&_button[type=submit]]:hover:bg-[#3966A2]
           [&_button[type=submit]]:hover:text-white
           [&_button[type=submit]]:hover:shadow-lg
           [&_button[type=submit]]:hover:shadow-[#3966A2]/20
           
+          /* === 5. 输入框样式 === */
           [&_input]:bg-white
           [&_input]:border-[#D6DEEB]
           [&_input]:text-[#132843]
