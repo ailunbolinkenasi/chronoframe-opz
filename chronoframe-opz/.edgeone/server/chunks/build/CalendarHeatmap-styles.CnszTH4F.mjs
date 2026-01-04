@@ -1,8 +1,0 @@
-const CalendarHeatmap_vue_vue_type_style_index_0_lang = ".vch__container .vch__legend{align-items:center;display:flex;justify-content:space-between}.vch__container .vch__external-legend-wrapper{margin:0 8px}svg.vch__wrapper{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;line-height:10px;width:100%}svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label{font-size:10px}svg.vch__wrapper .vch__days__labels__wrapper text.vch__day__label,svg.vch__wrapper .vch__legend__wrapper text{font-size:9px}svg.vch__wrapper .vch__legend__wrapper text,svg.vch__wrapper text.vch__day__label,svg.vch__wrapper text.vch__month__label{fill:#767676}svg.vch__wrapper rect.vch__day__square:hover{paint-order:stroke;stroke:#555;stroke-width:2px}svg.vch__wrapper rect.vch__day__square:focus{outline:none}svg.vch__wrapper.dark-mode .vch__legend__wrapper text,svg.vch__wrapper.dark-mode text.vch__day__label,svg.vch__wrapper.dark-mode text.vch__month__label{fill:#fff}";
-
-const CalendarHeatmapStyles_CnszTH4F = [
-  CalendarHeatmap_vue_vue_type_style_index_0_lang
-];
-
-export { CalendarHeatmapStyles_CnszTH4F as default };
-//# sourceMappingURL=CalendarHeatmap-styles.CnszTH4F.mjs.map
