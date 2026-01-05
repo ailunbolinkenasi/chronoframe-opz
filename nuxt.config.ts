@@ -204,10 +204,16 @@ export default defineNuxtConfig({
   fonts: {
       // 禁用特定的提供商
       providers: {
-        google: false, // 彻底禁用 Google Fonts 来源
+        google: false, // 已禁用
+        bunny: false,  // <--- 新增：禁用 Bunny Fonts
+        fontshare: false, // 建议：如果网络受限，建议同时也禁用这个
+        adobe: false,     // 建议：同上
       },
-      // 或者如果你想本地化处理，可以设置只使用本地或特定来源
+      // 保持优先使用本地
       priority: ['local'], 
+      
+      // 如果你希望在找不到字体时不要报错阻断构建，可以尝试开启 experimental 的离线模式（视版本而定）
+      // 或者确保所有用到的字体都已经放在了 public/ 或 assets/ 目录下
     },
   ogImage: {
     fonts: ['Rubik:400', 'Rubik:700', 'Noto+Sans+SC:400', 'Noto+Sans+SC:700'],
