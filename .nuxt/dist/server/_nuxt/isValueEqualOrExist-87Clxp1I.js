@@ -1,0 +1,10 @@
+import { ao as isNullish } from "../server.mjs";
+import { isEqual } from "D:/chronoframe-opz/node_modules/.pnpm/ohash@2.0.11/node_modules/ohash/dist/index.mjs";
+function isValueEqualOrExist(base, current) {
+  if (isNullish(base)) return false;
+  if (Array.isArray(base)) return base.some((val) => isEqual(val, current));
+  else return isEqual(base, current);
+}
+export {
+  isValueEqualOrExist as i
+};
