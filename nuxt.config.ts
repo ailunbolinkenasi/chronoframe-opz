@@ -134,11 +134,6 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'node_server',
-    output: {
-      dir: '../edgeone',
-      serverDir: '../edgeone/server',
-      publicDir: '../edgeone/public'
-    },
     experimental: {
       websocket: true,
       tasks: true,
