@@ -272,6 +272,6 @@ if (import.meta.dev && !import.meta.nitro && import.meta.hot) {
 }
 /** client-end **/
 
-import cfg0 from "/Users/xiaoyou/Desktop/chronoframe/app/app.config.ts"
+import cfg0 from "D:/chronoframe-opz/app/app.config.ts"
 
 export default /*@__PURE__*/ defuFn(cfg0, inlineConfig)

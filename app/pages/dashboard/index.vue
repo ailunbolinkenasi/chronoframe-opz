@@ -185,7 +185,7 @@ const onShareSite = () => {
         <UCard>
           <template #header>
             <h2 class="text-lg font-semibold pb-1.5">
-              {{ $t('dashboard.overview.section.runtimeInfo.title') }}
+              🌍 {{ $t('dashboard.overview.section.runtimeInfo.title') }}
             </h2>
           </template>
 

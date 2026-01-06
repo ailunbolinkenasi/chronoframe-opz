@@ -1,7 +1,7 @@
 
 /// <reference path="app.config.d.ts" />
 /// <reference path="runtime-config.d.ts" />
-/// <reference types="/Users/xiaoyou/Desktop/chronoframe/node_modules/.pnpm/@nuxt+nitro-server@4.2.2_ecc391efaa4bd5275b73332700e879f9/node_modules/@nuxt/nitro-server/dist/index.mjs" />
+/// <reference types="D:/chronoframe-opz/node_modules/.pnpm/@nuxt+nitro-server@4.2.2_ecc391efaa4bd5275b73332700e879f9/node_modules/@nuxt/nitro-server/dist/index.mjs" />
 /// <reference path="../module/nuxt-site-config.d.ts" />
 /// <reference path="../module/nuxt-og-image.d.ts" />
 /// <reference path="nitro-middleware.d.ts" />

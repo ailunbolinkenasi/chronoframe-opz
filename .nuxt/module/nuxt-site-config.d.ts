@@ -2,19 +2,19 @@
 
 declare module 'nitropack' {
   interface NitroRouteRules {
-    site?: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@1.15.4_magicast@0.5.1_vue@3.5.26_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigInput
+    site?: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigInput
   }
   interface NitroRouteConfig {
-    site?: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@1.15.4_magicast@0.5.1_vue@3.5.26_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/types').SiteConfig
+    site?: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/types').SiteConfig
   }
   interface NitroRuntimeHooks {
-    'site-config:init': (ctx: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@1.15.4_magicast@0.5.1_vue@3.5.26_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/types').HookSiteConfigInitContext) => void | Promise<void>
+    'site-config:init': (ctx: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/types').HookSiteConfigInitContext) => void | Promise<void>
   }
 }
 
 declare module 'h3' {
   interface H3EventContext {
-    siteConfig: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@1.15.4_magicast@0.5.1_vue@3.5.26_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
+    siteConfig: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
     siteConfigNitroOrigin: string
   }
 }
@@ -22,24 +22,24 @@ declare module 'h3' {
 
 declare module '@nuxt/schema' {
   interface Nuxt {
-    _siteConfig?: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@1.15.4_magicast@0.5.1_vue@3.5.26_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
+    _siteConfig?: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
   }
 }
 declare module 'nuxt/app' {
   interface NuxtApp {
-     $nuxtSiteConfig: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@1.15.4_magicast@0.5.1_vue@3.5.26_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
+     $nuxtSiteConfig: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
   }
 }
 declare module '#app' {
   interface NuxtApp {
-    $nuxtSiteConfig: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@1.15.4_magicast@0.5.1_vue@3.5.26_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
+    $nuxtSiteConfig: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
   }
 }
 
 
 declare global {
   interface Window {
-    __NUXT_SITE_CONFIG__: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@1.15.4_magicast@0.5.1_vue@3.5.26_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigResolved
+    __NUXT_SITE_CONFIG__: import('../../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/types').SiteConfigResolved
   }
 }
 

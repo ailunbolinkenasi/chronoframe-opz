@@ -1930,3 +1930,238 @@
 {"date":"2026-01-04T08:59:07.961Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
 {"date":"2026-01-04T08:59:07.964Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
 {"date":"2026-01-04T08:59:07.965Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T03:58:40.199Z","args":["Initializing settings manager with default settings"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T03:58:40.210Z","args":["Starting WorkerPool with 5 workers"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T03:58:40.225Z","args":["Setting app:author updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T03:58:40.219Z","args":["Migrating app settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T03:58:40.225Z","args":["Migrating map settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T03:58:40.223Z","args":["Setting app:title updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T03:58:40.225Z","args":["Setting map:provider updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T03:58:40.226Z","args":["No dead tasks found in queue"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T03:58:40.226Z","args":["Creating storage provider: local"],"type":"info","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T03:58:40.226Z","args":["Migrating storage configuration"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T03:58:40.227Z","args":["LOCAL basePath is not absolute: ./data/storage"],"type":"warn","level":1,"tag":"cframe/storage"}
+{"date":"2026-01-06T03:58:40.228Z","args":["Queue processing started with interval: 1500ms"],"type":"success","level":3,"tag":"cframe/queue:worker-1"}
+{"date":"2026-01-06T03:58:40.230Z","args":["Queue processing started with interval: 2100ms"],"type":"success","level":3,"tag":"cframe/queue:worker-3"}
+{"date":"2026-01-06T03:58:40.231Z","args":["Queue processing started with interval: 2700ms"],"type":"success","level":3,"tag":"cframe/queue:worker-5"}
+{"date":"2026-01-06T03:58:40.229Z","args":["Queue processing started with interval: 1800ms"],"type":"success","level":3,"tag":"cframe/queue:worker-2"}
+{"date":"2026-01-06T03:58:40.231Z","args":["Storage provider of type s3 already exists, skipping creation"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T03:58:40.232Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T03:58:40.231Z","args":["WorkerPool started successfully with 5 workers"],"type":"success","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T03:58:40.230Z","args":["Queue processing started with interval: 2400ms"],"type":"success","level":3,"tag":"cframe/queue:worker-4"}
+{"date":"2026-01-06T03:58:40.235Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T03:58:40.235Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T04:00:00.271Z","args":["Starting WorkerPool with 5 workers"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:00:00.259Z","args":["Initializing settings manager with default settings"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T04:00:00.284Z","args":["Migrating app settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T04:00:00.290Z","args":["Setting app:author updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T04:00:00.289Z","args":["Setting app:title updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T04:00:00.291Z","args":["Migrating map settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T04:00:00.292Z","args":["No dead tasks found in queue"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:00:00.291Z","args":["Setting map:provider updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T04:00:00.292Z","args":["Migrating storage configuration"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T04:00:00.292Z","args":["Creating storage provider: local"],"type":"info","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T04:00:00.293Z","args":["LOCAL basePath is not absolute: ./data/storage"],"type":"warn","level":1,"tag":"cframe/storage"}
+{"date":"2026-01-06T04:00:00.294Z","args":["Queue processing started with interval: 1500ms"],"type":"success","level":3,"tag":"cframe/queue:worker-1"}
+{"date":"2026-01-06T04:00:00.296Z","args":["Queue processing started with interval: 1800ms"],"type":"success","level":3,"tag":"cframe/queue:worker-2"}
+{"date":"2026-01-06T04:00:00.297Z","args":["Queue processing started with interval: 2100ms"],"type":"success","level":3,"tag":"cframe/queue:worker-3"}
+{"date":"2026-01-06T04:00:00.297Z","args":["Queue processing started with interval: 2400ms"],"type":"success","level":3,"tag":"cframe/queue:worker-4"}
+{"date":"2026-01-06T04:00:00.298Z","args":["Queue processing started with interval: 2700ms"],"type":"success","level":3,"tag":"cframe/queue:worker-5"}
+{"date":"2026-01-06T04:00:00.299Z","args":["WorkerPool started successfully with 5 workers"],"type":"success","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:00:00.299Z","args":["Storage provider of type s3 already exists, skipping creation"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T04:00:00.299Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T04:00:00.304Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T04:00:00.304Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T04:10:00.302Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:10:00.302Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:10:00.302Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:10:00.301Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:10:00.302Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:10:00.302Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:10:00.302Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:10:00.303Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:10:00.303Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.303Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.303Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.304Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.303Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.304Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.304Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.303Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.304Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:20:00.304Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.315Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.315Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.316Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.316Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.316Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.316Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.316Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.316Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:30:00.317Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 1800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.319Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.320Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.320Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 2400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.320Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.320Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 2400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.320Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 2400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.320Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.320Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 2400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:40:00.320Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 2400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.327Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.327Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.327Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.327Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.327Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.328Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.328Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.328Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T04:50:00.328Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.340Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.340Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.341Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.341Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.341Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.341Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.341Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.341Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:00:00.341Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 3600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.351Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.351Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.351Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.351Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.351Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.351Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.352Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.351Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:10:00.351Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4200s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.366Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.366Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.366Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.366Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.366Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.366Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.366Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.366Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:20:00.367Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 4800s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.379Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.379Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.379Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.379Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.379Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 5400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.379Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 5400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.379Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 5400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.380Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 5400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:30:00.379Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 5400s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.383Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.383Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.383Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.383Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.383Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.384Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.384Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.384Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:40:00.384Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6000s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.387Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.388Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.388Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.388Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.388Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.388Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.388Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.388Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:50:00.388Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 6600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:57:41.398Z","args":["Initializing settings manager with default settings"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T05:57:41.411Z","args":["Starting WorkerPool with 5 workers"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:57:41.421Z","args":["Migrating app settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T05:57:41.425Z","args":["Setting app:title updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T05:57:41.427Z","args":["Setting app:author updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T05:57:41.428Z","args":["Setting map:provider updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T05:57:41.427Z","args":["Migrating map settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T05:57:41.428Z","args":["No dead tasks found in queue"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:57:41.428Z","args":["Migrating storage configuration"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T05:57:41.429Z","args":["Creating storage provider: local"],"type":"info","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T05:57:41.431Z","args":["Queue processing started with interval: 1500ms"],"type":"success","level":3,"tag":"cframe/queue:worker-1"}
+{"date":"2026-01-06T05:57:41.430Z","args":["LOCAL basePath is not absolute: ./data/storage"],"type":"warn","level":1,"tag":"cframe/storage"}
+{"date":"2026-01-06T05:57:41.433Z","args":["Queue processing started with interval: 1800ms"],"type":"success","level":3,"tag":"cframe/queue:worker-2"}
+{"date":"2026-01-06T05:57:41.434Z","args":["Queue processing started with interval: 2400ms"],"type":"success","level":3,"tag":"cframe/queue:worker-4"}
+{"date":"2026-01-06T05:57:41.433Z","args":["Queue processing started with interval: 2100ms"],"type":"success","level":3,"tag":"cframe/queue:worker-3"}
+{"date":"2026-01-06T05:57:41.434Z","args":["Queue processing started with interval: 2700ms"],"type":"success","level":3,"tag":"cframe/queue:worker-5"}
+{"date":"2026-01-06T05:57:41.435Z","args":["Storage provider of type s3 already exists, skipping creation"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T05:57:41.435Z","args":["WorkerPool started successfully with 5 workers"],"type":"success","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T05:57:41.435Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T05:57:41.439Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T05:57:41.439Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:00:25.663Z","args":["Starting WorkerPool with 5 workers"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:00:25.651Z","args":["Initializing settings manager with default settings"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:00:25.678Z","args":["Setting app:title updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:00:25.674Z","args":["Migrating app settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:00:25.680Z","args":["Setting app:author updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:00:25.680Z","args":["Migrating map settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:00:25.681Z","args":["Setting map:provider updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:00:25.681Z","args":["No dead tasks found in queue"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:00:25.681Z","args":["Migrating storage configuration"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:00:25.682Z","args":["Creating storage provider: local"],"type":"info","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:00:25.682Z","args":["LOCAL basePath is not absolute: ./data/storage"],"type":"warn","level":1,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:00:25.683Z","args":["Queue processing started with interval: 1500ms"],"type":"success","level":3,"tag":"cframe/queue:worker-1"}
+{"date":"2026-01-06T06:00:25.685Z","args":["Queue processing started with interval: 1800ms"],"type":"success","level":3,"tag":"cframe/queue:worker-2"}
+{"date":"2026-01-06T06:00:25.686Z","args":["Queue processing started with interval: 2100ms"],"type":"success","level":3,"tag":"cframe/queue:worker-3"}
+{"date":"2026-01-06T06:00:25.687Z","args":["Queue processing started with interval: 2400ms"],"type":"success","level":3,"tag":"cframe/queue:worker-4"}
+{"date":"2026-01-06T06:00:25.688Z","args":["Queue processing started with interval: 2700ms"],"type":"success","level":3,"tag":"cframe/queue:worker-5"}
+{"date":"2026-01-06T06:00:25.688Z","args":["WorkerPool started successfully with 5 workers"],"type":"success","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:00:25.689Z","args":["Storage provider of type s3 already exists, skipping creation"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:00:25.689Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:00:25.697Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:00:25.697Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:10:25.704Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:10:25.705Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:10:25.704Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:10:25.705Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:10:25.705Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:10:25.704Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:10:25.706Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:10:25.705Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:10:25.706Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:19:33.761Z","args":["Initializing settings manager with default settings"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:19:33.783Z","args":["Migrating app settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:19:33.774Z","args":["Starting WorkerPool with 5 workers"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:19:33.789Z","args":["Setting app:title updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:19:33.791Z","args":["Setting app:author updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:19:33.792Z","args":["Setting map:provider updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:19:33.791Z","args":["Migrating map settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:19:33.792Z","args":["No dead tasks found in queue"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:19:33.792Z","args":["Migrating storage configuration"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:19:33.793Z","args":["Creating storage provider: local"],"type":"info","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:19:33.793Z","args":["LOCAL basePath is not absolute: ./data/storage"],"type":"warn","level":1,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:19:33.794Z","args":["Queue processing started with interval: 1500ms"],"type":"success","level":3,"tag":"cframe/queue:worker-1"}
+{"date":"2026-01-06T06:19:33.796Z","args":["Queue processing started with interval: 2100ms"],"type":"success","level":3,"tag":"cframe/queue:worker-3"}
+{"date":"2026-01-06T06:19:33.797Z","args":["Queue processing started with interval: 2400ms"],"type":"success","level":3,"tag":"cframe/queue:worker-4"}
+{"date":"2026-01-06T06:19:33.799Z","args":["WorkerPool started successfully with 5 workers"],"type":"success","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:19:33.798Z","args":["Queue processing started with interval: 2700ms"],"type":"success","level":3,"tag":"cframe/queue:worker-5"}
+{"date":"2026-01-06T06:19:33.799Z","args":["Storage provider of type s3 already exists, skipping creation"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:19:33.795Z","args":["Queue processing started with interval: 1800ms"],"type":"success","level":3,"tag":"cframe/queue:worker-2"}
+{"date":"2026-01-06T06:19:33.799Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:19:33.803Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:19:33.803Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:20:29.942Z","args":["Initializing settings manager with default settings"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:20:29.953Z","args":["Starting WorkerPool with 5 workers"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:20:29.969Z","args":["Setting app:title updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:20:29.963Z","args":["Migrating app settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:20:29.970Z","args":["Migrating map settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:20:29.970Z","args":["Setting app:author updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:20:29.971Z","args":["Setting map:provider updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-06T06:20:29.971Z","args":["Migrating storage configuration"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:20:29.971Z","args":["No dead tasks found in queue"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:20:29.972Z","args":["Creating storage provider: local"],"type":"info","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:20:29.973Z","args":["LOCAL basePath is not absolute: ./data/storage"],"type":"warn","level":1,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:20:29.975Z","args":["Queue processing started with interval: 1800ms"],"type":"success","level":3,"tag":"cframe/queue:worker-2"}
+{"date":"2026-01-06T06:20:29.973Z","args":["Queue processing started with interval: 1500ms"],"type":"success","level":3,"tag":"cframe/queue:worker-1"}
+{"date":"2026-01-06T06:20:29.976Z","args":["Queue processing started with interval: 2100ms"],"type":"success","level":3,"tag":"cframe/queue:worker-3"}
+{"date":"2026-01-06T06:20:29.977Z","args":["WorkerPool started successfully with 5 workers"],"type":"success","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-06T06:20:29.976Z","args":["Queue processing started with interval: 2400ms"],"type":"success","level":3,"tag":"cframe/queue:worker-4"}
+{"date":"2026-01-06T06:20:29.977Z","args":["Storage provider of type s3 already exists, skipping creation"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:20:29.977Z","args":["Queue processing started with interval: 2700ms"],"type":"success","level":3,"tag":"cframe/queue:worker-5"}
+{"date":"2026-01-06T06:20:29.977Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-06T06:20:29.981Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:20:29.981Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-06T06:24:53.514Z","args":["Saved file: D:\\chronoframe-opz\\data\\storage\\photos\\IMG_1201-2.jpg"],"type":"success","level":3,"tag":"cframe/storage"}

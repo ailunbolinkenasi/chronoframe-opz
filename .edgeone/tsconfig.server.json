@@ -96,10 +96,10 @@
         "../shared/*"
       ],
       "#build": [
-        "./"
+        "../.nuxt"
       ],
       "#build/*": [
-        "./*"
+        "../.nuxt/*"
       ],
       "#internal/nuxt/paths": [
         "../node_modules/.pnpm/@nuxt+nitro-server@4.2.2_ecc391efaa4bd5275b73332700e879f9/node_modules/@nuxt/nitro-server/dist/runtime/utils/paths"
@@ -111,7 +111,7 @@
         "../node_modules/.pnpm/@nuxt+ui@4.3.0_ce70e36b2b2e96ffad445540e21eec42/node_modules/@nuxt/ui/dist/runtime/*"
       ],
       "#color-mode-options": [
-        "./color-mode-options.mjs"
+        "../.nuxt/color-mode-options.mjs"
       ],
       "#image": [
         "../node_modules/.pnpm/@nuxt+image@1.11.0_db0@0.3._5886db073ec5b512e225e21b22b6101b/node_modules/@nuxt/image/dist/runtime"
@@ -138,7 +138,7 @@
         "../node_modules/.pnpm/@nuxtjs+i18n@10.1.0_@vue+co_9a174711d70ee663b64d175dd292a283/node_modules/@nuxtjs/i18n/dist/types"
       ],
       "mapbox-gl": [
-        "./mapbox-gl"
+        "../.nuxt/mapbox-gl"
       ],
       "#og-image": [
         "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhea_cc5ffa53446ac9a9d3e84ffe6464de21/node_modules/nuxt-og-image/dist/runtime"
@@ -162,7 +162,7 @@
         "../node_modules/.pnpm/nuxt@4.2.2_@parcel+watcher@_e5daeaa80ff686017e711928af1155fd/node_modules/nuxt/dist/head/runtime/composables"
       ],
       "#nuxt-icon-server-bundle": [
-        "./nuxt-icon-server-bundle"
+        "../.nuxt/nuxt-icon-server-bundle"
       ],
       "#internal/nuxt-site-config": [
         "../node_modules/.pnpm/nuxt-site-config@3.2.14_h3@_47aea19d9b7112c00309a95f95f1c80c/node_modules/nuxt-site-config/dist/runtime/server/composable-barrel-deprecated"
@@ -196,7 +196,7 @@
     ]
   },
   "include": [
-    "./types/nitro-nuxt.d.ts",
+    "../.nuxt/types/nitro-nuxt.d.ts",
     "../node_modules/.pnpm/reka-ui@2.7.0_typescript@5.9.3_vue@3.5.26_typescript@5.9.3_/node_modules/runtime/server",
     "../node_modules/.pnpm/reka-ui@2.7.0_typescript@5.9.3_vue@3.5.26_typescript@5.9.3_/node_modules/dist/runtime/server",
     "../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2_magicast@0.5.1/node_modules/runtime/server",
