@@ -135,11 +135,6 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'node_server',
     buildDir: '.edgeone',
-    output: {
-      dir: '.edgeone',       // <--- 强制将构建结果输出到 .edgeone 目录
-      serverDir: '.edgeone/server',
-      publicDir: '.edgeone/public'
-    },
     experimental: {
       websocket: true,
       tasks: true,

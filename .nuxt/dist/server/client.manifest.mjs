@@ -1,1 +1,0 @@
-export { default } from "file:///D:/chronoframe-opz/node_modules/.pnpm/@nuxt+vite-builder@4.2.2_34a0903ced0323a134043742152481e3/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
