@@ -1,4 +1,4 @@
-FROM node:22-alpine AS base
+FROM docker.1ms.run/library/node:22-alpine AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
@@ -17,7 +17,7 @@ COPY . .
 RUN NODE_OPTIONS="--max-old-space-size=4096" pnpm run build:deps
 RUN NODE_OPTIONS="--max-old-space-size=4096" pnpm run build
 
-FROM node:22-alpine AS runtime
+FROM docker.1ms.run/library/node:22-alpine AS runtime
 RUN apk update && apk add --no-cache perl exiftool
 WORKDIR /app
 

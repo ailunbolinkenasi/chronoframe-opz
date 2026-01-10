@@ -1930,3 +1930,33 @@
 {"date":"2026-01-04T08:59:07.961Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
 {"date":"2026-01-04T08:59:07.964Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
 {"date":"2026-01-04T08:59:07.965Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-04T10:25:42.237Z","args":["Initializing settings manager with default settings"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-04T10:25:42.276Z","args":["Setting app:author updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-04T10:25:42.277Z","args":["Migrating map settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-04T10:25:42.265Z","args":["Starting WorkerPool with 5 workers"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:25:42.279Z","args":["No dead tasks found in queue"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:25:42.279Z","args":["Migrating storage configuration"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-04T10:25:42.280Z","args":["Creating storage provider: local"],"type":"info","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-04T10:25:42.281Z","args":["LOCAL basePath is not absolute: ./data/storage"],"type":"warn","level":1,"tag":"cframe/storage"}
+{"date":"2026-01-04T10:25:42.283Z","args":["Queue processing started with interval: 1500ms"],"type":"success","level":3,"tag":"cframe/queue:worker-1"}
+{"date":"2026-01-04T10:25:42.278Z","args":["Setting map:provider updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-04T10:25:42.287Z","args":["Queue processing started with interval: 2100ms"],"type":"success","level":3,"tag":"cframe/queue:worker-3"}
+{"date":"2026-01-04T10:25:42.288Z","args":["Queue processing started with interval: 2400ms"],"type":"success","level":3,"tag":"cframe/queue:worker-4"}
+{"date":"2026-01-04T10:25:42.290Z","args":["Queue processing started with interval: 2700ms"],"type":"success","level":3,"tag":"cframe/queue:worker-5"}
+{"date":"2026-01-04T10:25:42.294Z","args":["WorkerPool started successfully with 5 workers"],"type":"success","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:25:42.294Z","args":["Storage provider of type s3 already exists, skipping creation"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-04T10:25:42.295Z","args":["Configuration migration completed"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-04T10:25:42.285Z","args":["Queue processing started with interval: 1800ms"],"type":"success","level":3,"tag":"cframe/queue:worker-2"}
+{"date":"2026-01-04T10:25:42.267Z","args":["Migrating app settings"],"type":"info","level":3,"tag":"cframe/settings-migration"}
+{"date":"2026-01-04T10:25:42.270Z","args":["Setting app:title updated"],"type":"info","level":3,"tag":"cframe/settings-mgr"}
+{"date":"2026-01-04T10:25:42.304Z","args":["Local storage ready at: ./data/storage"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-04T10:25:42.305Z","args":["Storage plugin initialized successfully"],"type":"success","level":3,"tag":"cframe/storage"}
+{"date":"2026-01-04T10:35:42.287Z","args":["=== WorkerPool Stats ==="],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:35:42.295Z","args":["  worker-1: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:35:42.296Z","args":["  worker-2: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:35:42.298Z","args":["  worker-3: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 600s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:35:42.303Z","args":["  worker-4: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 599s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:35:42.305Z","args":["  worker-5: Idle | Processed: 0 | Errors: 0 | Success Rate: 0.0% | Uptime: 599s"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:35:42.294Z","args":["Average Success Rate: 0%"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:35:42.293Z","args":["Total Workers: 5, Active: 0"],"type":"info","level":3,"tag":"cframe/queue"}
+{"date":"2026-01-04T10:35:42.294Z","args":["Total Processed: 0, Total Errors: 0"],"type":"info","level":3,"tag":"cframe/queue"}

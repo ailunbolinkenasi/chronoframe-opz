@@ -1,3 +1,4 @@
 {
-    "outputDirectory": "./output"
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm build:deps && pnpm build"
 }
