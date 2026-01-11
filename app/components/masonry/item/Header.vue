@@ -260,7 +260,7 @@ const isRepoLinkHovering = ref(false)
         >
           <a
             ref="projectLink"
-            href="https://github.com/HoshinoSuzumi/chronoframe"
+            href="https://github.com/ailunbolinkenasi/chronoframe-opz"
             target="_blank"
             rel="noopener noreferrer"
             class="hover:underline inline-flex items-center gap-0.5 group"

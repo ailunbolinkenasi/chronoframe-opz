@@ -6,7 +6,7 @@
       "path": "./.nuxt/tsconfig.app.json"
     },
     {
-      "path": "./.nuxt/tsconfig.server.json"
+      "path": "./.edgeone/tsconfig.server.json"
     },
     {
       "path": "./.nuxt/tsconfig.shared.json"

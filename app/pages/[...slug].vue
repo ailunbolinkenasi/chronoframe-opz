@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 definePageMeta({
   layout: 'masonry',
-  // 固定 key 防止路径参数变化时创建新的实例
   key: 'photo-viewer-route',
+  keepalive: true,
 })
 
 const route = useRoute()
@@ -11,111 +11,149 @@ const toast = useToast()
 
 const { switchToIndex, closeViewer, openViewer } = useViewerState()
 const { isViewerOpen } = storeToRefs(useViewerState())
-
 const { photos } = usePhotos()
 
-const slug = computed(() => (route.params.slug as string[]) || [])
-const photoId = computed(() => slug.value[0] || null)
-const currentPhoto = computed(() =>
-  photos.value.find((photo) => photo.id === photoId.value),
-)
-
-// 使用 useState 防止页面路由切换时重复弹出，仅在刷新页面后首次加载显示
+// 使用 shallowRef 减少响应式开销
+const slug = shallowRef<string[]>([])
 const hasShownUpdateToast = useState('hasShownUpdateToast', () => false)
 
-// 在页面加载时显示 toast 提示
+// 版本更新信息
+const UPDATE_MESSAGES = [
+  '1.本ChronoFrame程序来自 fork 版本1.0.0-beta-fix-2025-12-31，本版本还在优化修改当中暂未提交。',
+  '2.优化了队列上传的读取速度',
+  '3.优化了首页图片部分展示照片为圆角状态',
+  '4.优化了加载动画',
+  '5.当前版本号为v1.0.0-beta-fix-2025-12-31'
+]
+
+// 获取当前照片 ID
+const photoId = computed(() => slug.value[0] ?? null)
+
+// 使用 shallowComputed 提升性能
+const currentPhoto = computed(() => {
+  if (!photoId.value) return null
+  return photos.value.find(p => p.id === photoId.value) ?? null
+}, { onlyTrackArrayElements: false })
+
+// 缓存 OG Image 配置以避免频繁重新计算
+const ogImageConfig = computed(() => ({
+  headline: currentPhoto.value ? 'PHOTO' : 'ChronoFrame',
+  title: currentPhoto.value?.title || getSetting('app:title'),
+  description: currentPhoto.value?.description || getSetting('app:title'),
+  thumbnailJpegUrl: currentPhoto.value?.thumbnailKey
+    ? `/thumb/${encodeURIComponent(currentPhoto.value.thumbnailUrl || '')}`
+    : undefined,
+  photo: currentPhoto.value || undefined,
+}))
+
+defineOgImageComponent('Photo', ogImageConfig)
+
+const { clearAllFilters, toggleFilter } = usePhotoFilters()
+
+// 防抖处理路由查询参数变化
+const handleTagFilter = useDebounceFn((tagParam: string | string[] | undefined) => {
+  if (tagParam && typeof tagParam === 'string' && !photoId.value) {
+    clearAllFilters()
+    toggleFilter('tags', tagParam)
+    router.replace('/')
+  }
+}, 300)
+
+// 使用 useBeforeRouteUpdate 替代 watch 路由
+onBeforeRouteUpdate(async (to, from) => {
+  slug.value = (to.params.slug as string[]) || []
+  
+  const newPhotoId = slug.value[0] ?? null
+  if (newPhotoId && photos.value.length > 0) {
+    const foundIndex = photos.value.findIndex(p => p.id === newPhotoId)
+    if (foundIndex !== -1) {
+      useHead({
+        title: photos.value[foundIndex]?.title || $t('title.fallback.photo'),
+      })
+      
+      if (!isViewerOpen.value) {
+        openViewer(foundIndex, null)
+      } else {
+        switchToIndex(foundIndex)
+      }
+    }
+  } else if (!newPhotoId) {
+    closeViewer()
+    useHead({ title: '' })
+  }
+
+  // 处理标签过滤
+  handleTagFilter(to.query.tag)
+})
+
+// 初始化加载
 onMounted(() => {
-  // 只在访问根路径（没有 photoId）且未显示过时显示
+  slug.value = (route.params.slug as string[]) || []
+
+  // 显示更新提示
   if (!photoId.value && !hasShownUpdateToast.value) {
     toast.add({
       title: '欢迎来到看见.',
-      description: [
-        '1. 本ChronoFrame程序来自 fork 版本1.0.0-beta-fix-2025-12-31，本版本还在优化修改当中暂未提交。',
-        '3. 优化了队列上传的读取速度',
-        '4. 优化了首页图片部分展示照片为圆角状态',
-        '5. 优化了加载动画',
-        '6. 本次优化版本号为v1.0.0-beta-fix-2025-12-31,以上为本次优化内容说明。'
-      ].join('\n'), // 使用换行符连接数组
+      description: UPDATE_MESSAGES.join('\n'),
       icon: 'tabler:info-circle',
-      color: 'primary',
-      duration: 10000, // 建议稍微长一点时间给用户阅读
+      color: 'blue',
+      duration: 10000,
       ui: {
-        // 关键配置：添加这个 class 确保 Toast 能识别换行符
-        description: 'whitespace-pre-line' 
+        description: 'whitespace-pre-line'
       },
-      // 添加关闭按钮
       actions: [{
         label: '关闭',
-        click: () => { /* 关闭动作会自动触发 */ }
+        click: () => {}
       }]
     })
-    
-    // 标记为已显示
     hasShownUpdateToast.value = true
+  }
+
+  // 初始化照片查看器
+  if (photoId.value && photos.value.length > 0) {
+    const foundIndex = photos.value.findIndex(p => p.id === photoId.value)
+    if (foundIndex !== -1) {
+      useHead({
+        title: photos.value[foundIndex]?.title || $t('title.fallback.photo'),
+      })
+      if (!isViewerOpen.value) {
+        openViewer(foundIndex, null)
+      }
+    }
   }
 })
 
-defineOgImageComponent('Photo', {
-  headline: currentPhoto.value ? 'PHOTO' : 'ChronoFrame',
-  title: currentPhoto.value?.title || getSetting('app:title'),
-  description: currentPhoto.value
-    ? currentPhoto.value.description
-    : getSetting('app:title'),
-  thumbnailJpegUrl:
-    currentPhoto.value && currentPhoto.value.thumbnailKey
-      ? `/thumb/${encodeURIComponent(currentPhoto.value.thumbnailUrl || '')}`
-      : undefined,
-  photo: currentPhoto.value || undefined,
-})
-
-// 处理标签查询参数
-const { clearAllFilters, toggleFilter } = usePhotoFilters()
-
-// 监听路由查询参数中的标签
+// 监听照片数据变化（仅当数组长度改变时）
 watch(
-  () => route.query.tag,
-  (tagParam) => {
-    if (tagParam && typeof tagParam === 'string' && !photoId.value) {
-      clearAllFilters()
-      toggleFilter('tags', tagParam)
-
-      router.replace('/')
-    }
-  },
-  { immediate: true },
-)
-
-watch(
-  [photoId, photos],
-  ([currentPhotoId, currentPhotos]) => {
-    if (currentPhotoId && currentPhotos.length > 0) {
-      const foundIndex = currentPhotos.findIndex(
-        (photo) => photo.id === currentPhotoId,
-      )
-      if (foundIndex !== -1) {
-        useHead({
-          title: currentPhotos[foundIndex]?.title || $t('title.fallback.photo'),
-        })
-        if (!isViewerOpen.value) {
-          // 直接访问照片详情页时，不设置 returnRoute（传入 null）
-          openViewer(foundIndex, null)
-        } else {
-          switchToIndex(foundIndex)
-        }
+  () => photos.value.length,
+  (length) => {
+    if (photoId.value && length > 0) {
+      const foundIndex = photos.value.findIndex(p => p.id === photoId.value)
+      if (foundIndex !== -1 && isViewerOpen.value) {
+        switchToIndex(foundIndex)
       }
-    } else if (!currentPhotoId) {
-      closeViewer()
-      useHead({
-        title: '',
-      })
     }
   },
-  { immediate: true },
+  { immediate: false }
 )
 </script>
 
 <template>
-  <div />
+  <!-- 空模板优化：页面内容由 masonry 布局和 viewer 组件管理 -->
+  <div class="sr-only">Photo viewer page</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* 屏幕阅读器专用样式 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+</style>
